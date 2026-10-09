@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/logo.png">
+<title>Advertise with Deshbani &amp; DTV</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<img src="assets/logo.png" alt="DTV and Deshbani">
+<div class="c">1578 Broadway St. 1st Floor, Buffalo, NY-14212<br>(716) 235-8349 · (917) 345-8780 · deshbani21@gmail.com</div>
+</div></header>
+
+<div class="wrap">
+<h1>Advertise with Deshbani &amp; DTV</h1>
+<p class="lead">Tick the ads you want. Your price and discount update instantly.</p>
+
+<div class="layout">
+<main>
+<div class="card"><h2>Your details</h2>
+<div class="grid2">
+<label class="f">Business name *<input type="text" id="biz" autocomplete="organization"></label>
+<label class="f">Contact name *<input type="text" id="contact" autocomplete="name"></label>
+<label class="f">Phone *<input type="tel" id="tel" autocomplete="tel"></label>
+<label class="f">E-mail<input type="email" id="email" autocomplete="email"></label>
+</div>
+<div class="grid2" style="margin-top:10px">
+<label class="f">Address<input type="text" id="addr" autocomplete="street-address"></label>
+<label class="f">City, State and Zip code<input type="text" id="city"></label>
+</div>
+</div>
+
+<div class="card"><h2>Choose your ads</h2>
+<div class="usd">All rates are listed in USD ($).</div>
+<div class="rc">
+ <div class="col"><div class="ch">Deshbani Newspaper<br>Advertising</div><div class="cb">
+  <div class="sec">Full-Colour Advertisement</div><div id="np_c"></div>
+  <div class="sec" style="margin-top:16px">Black &amp; White Advertisement</div><div id="np_bw"></div>
+ </div></div>
+ <div class="col"><div class="ch">DTV Broadcast<br>Advertising</div><div class="cb">
+  <div class="sec">Ad Duration</div><div id="tv"></div>
+ </div></div>
+ <div class="col"><div class="ch">Digital Media<br>Advertising</div><div class="cb">
+  <div class="sec">Advertising Platform</div><div id="dg"></div>
+  <div class="note2">Social media photocard advertising package: 40% of the total monthly news content.</div>
+ </div></div>
+</div>
+<div class="run">
+<div class="grp" style="margin-top:0">Newspaper: when should your ad run? <span class="hint0">(newspaper prices are per ad, per issue)</span></div>
+<label class="opt sel"><input type="radio" name="ct" value="every" checked><span class="nm">Every issue<small>12 issues total</small></span></label>
+<label class="opt"><input type="radio" name="ct" value="specific"><span class="nm">Specific issue(s)<small>Pick the months below</small></span></label>
+<div class="months hide" id="months"></div>
+</div>
+</div>
+
+<div class="card"><h2>Notes (optional)</h2>
+<label class="f">Anything we should know about your ad?<textarea id="notes"></textarea></label>
+</div>
+</main>
+
+<aside>
+<div class="sum" id="sum">
+<h2>Your price</h2>
+<div id="lines"></div>
+<div id="tots"></div>
+<div class="tiers" id="tiers"></div>
+<div class="err" id="err" style="margin:12px 0 0"></div>
+<div class="acts">
+<button id="mail">✉ Send my order to Deshbani</button>
+<button class="sec" id="copy">Copy order text</button>
+</div>
+</div>
+</aside>
+</div>
+</div>
+
+<div class="barm"><span>Total <b id="mt">$0.00</b></span><button id="see">View price details ↓</button></div>
+<div class="toast" id="toast"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
